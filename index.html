@@ -558,7 +558,7 @@
                     </div>
 
                     <div class="event-card">
-                        <div class="event-card-date">🌊 03.10.2026 — ЗЕЛЕНОГРАДСК</div>
+                        <div class="event-card-date">🌊 10.10.2026 — ЗЕЛЕНОГРАДСК</div>
                         <strong>Главный юбилейный съезд:</strong> Празднование с торжественным банкетом в <strong>г. Зеленоградск Калининградской области</strong>.<br>
                         <span style="font-style: italic; color: #7a0f0f; font-size: 0.9rem; display: inline-block; margin-top: 3px;">★ Точное место проведения банкета будет объявлено дополнительно.</span>
                     </div>
@@ -638,29 +638,29 @@
                     </div>
                 </div>
 
-                <!-- Section 2: 03.10 Zelenogradsk -->
+                <!-- Section 2: 10.10 Zelenogradsk -->
                 <div class="event-confirmation-box">
-                    <h4>🌊 2. Главный юбилейный съезд и банкет в Зеленоградске (03.10.2026):</h4>
+                    <h4>🌊 2. Главный юбилейный съезд и банкет в Зеленоградске (10.10.2026):</h4>
                     <p style="font-size: 0.9rem; font-style: italic; color: #7a0f0f; margin-bottom: 10px;">★ Обращаем внимание: точное место проведения банкета будет объявлено дополнительно.</p>
                     <div class="radio-group">
                         <label class="radio-label">
-                            <input type="radio" name="Присутствие_03_10_Зеленоградск" value="Будем присутствовать" checked onclick="toggleGuestCount('count_03', true)">
+                            <input type="radio" name="Присутствие_10_10_Зеленоградск" value="Будем присутствовать" checked onclick="toggleGuestCount('count_03', true)">
                             Прибудем на банкет в Зеленоградск!
                         </label>
                         <label class="radio-label">
-                            <input type="radio" name="Присутствие_03_10_Зеленоградск" value="Не сможем быть" onclick="toggleGuestCount('count_03', false)">
+                            <input type="radio" name="Присутствие_10_10_Зеленоградск" value="Не сможем быть" onclick="toggleGuestCount('count_03', false)">
                             К сожалению, не сможем быть 3 октября
                         </label>
                     </div>
                     <div style="margin-top: 10px;">
-                        <label for="guest_count_03" style="font-weight: bold; font-size: 0.95rem;">Количество гостей на 3 октября (Зеленоградск):</label>
-                        <input type="number" id="guest_count_03" name="Количество_гостей_03_10" class="form-control" min="0" max="10" value="1" style="width: 120px; display: inline-block; margin-left: 10px;" required>
+                        <label for="guest_count_03" style="font-weight: bold; font-size: 0.95rem;">Количество гостей на 10 октября (Зеленоградск):</label>
+                        <input type="number" id="guest_count_03" name="Количество_гостей_10_10" class="form-control" min="0" max="10" value="1" style="width: 120px; display: inline-block; margin-left: 10px;" required>
                     </div>
                 </div>
 
                 <!-- Drink Preferences -->
                 <div class="form-group">
-                    <label for="drinks">Предпочтения по напиткам / меню (для банкета 03.10):</label>
+                    <label for="drinks">Предпочтения по напиткам / меню (для банкета 10.10):</label>
                     <select id="drinks" name="Предпочтения_по_напиткам" class="form-control">
                         <option value="Все согласно утвержденному плану">Все согласно утвержденному плану!</option>
                         <option value="Вино / Шампанское">Вино / Шампанское</option>
@@ -733,15 +733,15 @@
             const name = form.elements['ФИО_и_состав_гостей'].value;
             const moscow = form.elements['Присутствие_29_09_Москва'].value;
             const moscowCount = form.elements['Количество_гостей_29_09'].value;
-            const zelenogradsk = form.elements['Присутствие_03_10_Зеленоградск'].value;
-            const zelCount = form.elements['Количество_гостей_03_10'].value;
+            const zelenogradsk = form.elements['Присутствие_10_10_Зеленоградск'].value;
+            const zelCount = form.elements['Количество_гостей_10_10'].value;
             const drinks = form.elements['Предпочтения_по_напиткам'].value;
             const wishes = form.elements['Пожелания_юбилярам'].value;
 
             const textMessage = `🎉 *НОВЫЙ РАПОРТ НА СВАДЬБУ!*\n\n` +
                                 `👤 *Товарищ/Гости:* ${name}\n` +
                                 `🏛 *Москва (29.09):* ${moscow} (${moscowCount} чел.)\n` +
-                                `🌊 *Зеленоградск (03.10):* ${zelenogradsk} (${zelCount} чел.)\n` +
+                                `🌊 *Зеленоградск (10.10):* ${zelenogradsk} (${zelCount} чел.)\n` +
                                 `🍷 *Напитки:* ${drinks}\n` +
                                 `💬 *Пожелания:* ${wishes || 'нет'}`;
 
